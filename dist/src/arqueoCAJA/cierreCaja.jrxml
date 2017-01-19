@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="376d10d0-0440-4fd7-9d50-54c2dd4f53b3">
 	<property name="ireport.zoom" value="1.210000000000003"/>
-	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.x" value="35"/>
+	<property name="ireport.y" value="230"/>
 	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
 	<style name="SubTitle" forecolor="#CCCCCC" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
 	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true" pdfFontName="Times-Roman"/>
@@ -281,13 +281,13 @@ order by hora]]>
 			<line>
 				<reportElement x="0" y="131" width="547" height="1" uuid="44e696bd-3cbd-44fb-9c77-b363ae5d0913"/>
 			</line>
-			<subreport>
+			<subreport isUsingCache="true" runToBottom="false">
 				<reportElement mode="Opaque" x="0" y="241" width="555" height="48" uuid="5e54eb26-27da-454a-9661-9d795f6f927f"/>
 				<subreportParameter name="idcaja">
 					<subreportParameterExpression><![CDATA[$P{idcaja}]]></subreportParameterExpression>
 				</subreportParameter>
 				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "cierreCaja_subreport1.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA["cierreCaja_subreport1.jasper"]]></subreportExpression>
 			</subreport>
 			<staticText>
 				<reportElement x="177" y="221" width="184" height="20" uuid="b875d39c-0a46-42bb-8da1-2713fe765bed"/>
